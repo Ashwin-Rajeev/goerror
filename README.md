@@ -40,3 +40,7 @@ err := goerror.New("New custom error")
 ## Contributing
 
 We welcome pull requests, bug fixes and issue reports. With that said, the bar for adding new symbols to this package is intentionally set high. Before proposing a change, please discuss your change by raising an issue.
+
+## License
+
+BSD-2-Clause
