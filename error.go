@@ -1,5 +1,4 @@
 // Package goerror implements functions to manipulate errors.
-
 // The traditional `error` handling metyhod in golangis given below
 // which applied recursively up the call stack results in error reports 
 // without context or debugging information.
@@ -18,7 +17,7 @@
 
 // which accepts the error and found the detailed information about the error.
 // `GetErrorInfo` returns the error wrapped up with the `file name`, 
-// `line number` and `function name` in which error occured.
+// `line number` and `function name` in which error occurred.
 
 // if err != nil {
 //         return goerror.GetErrorInfo(err)
