@@ -37,6 +37,6 @@ New help us to create custom user defined errors.
 ```
 err := goerror.New("New custom error")
 ```
-##Contributing
+## Contributing
 
 We welcome pull requests, bug fixes and issue reports. With that said, the bar for adding new symbols to this package is intentionally set high. Before proposing a change, please discuss your change by raising an issue.
