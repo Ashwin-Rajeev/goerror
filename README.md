@@ -1,5 +1,5 @@
 # goerror
-https://travis-ci.com/Ashwin-Rajeev/goerror.svg?branch=master
+[![Build Status](https://travis-ci.com/Ashwin-Rajeev/goerror.svg?branch=master)](https://travis-ci.com/Ashwin-Rajeev/goerror)
 
 Package goerror implements functions to manipulate errors.
 
