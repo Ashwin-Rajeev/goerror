@@ -13,6 +13,7 @@ if err != nil {
 The package mainly contain two **functions**
 
 > GetErrorInfo
+
 > New
 
 ## GetErrorInfo
