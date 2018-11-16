@@ -1,4 +1,5 @@
 # goerror
+https://travis-ci.com/Ashwin-Rajeev/goerror.svg?branch=master
 
 Package goerror implements functions to manipulate errors.
 
