@@ -2,7 +2,7 @@
 
 Package goerror implements functions to manipulate errors.
 
-The traditional `error` handling metyhod in golangis given below
+The traditional `error` handling method in golang is given below
 which applied recursively up the call stack results in error reports without context or debugging information.
 
 ```
