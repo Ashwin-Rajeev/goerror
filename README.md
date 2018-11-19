@@ -10,9 +10,11 @@ if err != nil {
         return err
 }
 ```
-The package mainly contain two **functions**
+The package mainly contain three **functions**
 
 > GetErrorInfo
+
+> GetErrorType
 
 > New
 
