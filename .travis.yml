@@ -10,3 +10,6 @@ go:
 
 script:
   - go test -v ./...
+  
+after_success:
+  - goveralls -coverprofile=coverage.out -service=travis-ci
