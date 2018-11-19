@@ -35,11 +35,11 @@ if err != nil {
 which accepts the error and found the type of the error.
 `GetErrorType` returns the error wrapped up with the `error type`, 
 
-> func GetErrorInfo(err error) error
+> func GetErrorType(err error) error
 
 ```
 if err != nil {
-        return goerror.GetErrorInfo(err)
+        return goerror.GetErrorType(err)
 }
 ```
 
