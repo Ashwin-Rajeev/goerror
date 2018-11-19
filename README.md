@@ -1,4 +1,4 @@
-# goerror   [![Build Status](https://travis-ci.com/Ashwin-Rajeev/goerror.svg?branch=master)](https://travis-ci.com/Ashwin-Rajeev/goerror)   [![Go Report Card](https://goreportcard.com/badge/github.com/Ashwin-Rajeev/goerror)](https://goreportcard.com/report/github.com/Ashwin-Rajeev/goerror)  [![GoDoc](https://godoc.org/github.com/Ashwin-Rajeev/goerror?status.svg)](https://godoc.org/github.com/Ashwin-Rajeev/goerror)
+# goerror   [![Build Status](https://travis-ci.com/Ashwin-Rajeev/goerror.svg?branch=master)](https://travis-ci.com/Ashwin-Rajeev/goerror)   [![Go Report Card](https://goreportcard.com/badge/github.com/Ashwin-Rajeev/goerror)](https://goreportcard.com/report/github.com/Ashwin-Rajeev/goerror)  [![GoDoc](https://godoc.org/github.com/Ashwin-Rajeev/goerror?status.svg)](https://godoc.org/github.com/Ashwin-Rajeev/goerror) [![Coverage Status](https://coveralls.io/repos/github/Ashwin-Rajeev/goerror/badge.svg?branch=master)](https://coveralls.io/github/Ashwin-Rajeev/goerror?branch=master)
 
 Package goerror implements functions to manipulate errors.
 
