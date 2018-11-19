@@ -1,6 +1,6 @@
 // Package goerror implements functions to manipulate errors.
-// The traditional `error` handling metyhod in golangis given below
-// which applied recursively up the call stack results in error reports 
+// The traditional `error` handling method in golang is given below
+// which applied recursively up the call stack results in error reports
 // without context or debugging information.
 
 // if err != nil {
@@ -16,13 +16,12 @@
 //  func GetErrorInfo(err error) error
 
 // which accepts the error and found the detailed information about the error.
-// `GetErrorInfo` returns the error wrapped up with the `file name`, 
-// `line number` and `function name` in which error occurred.
+// GetErrorInfo returns the error wrapped up with the file name,
+// line number and function name in which error occured.
 
 // if err != nil {
 //         return goerror.GetErrorInfo(err)
 // }
-
 
 // New
 
@@ -44,7 +43,8 @@ type errorValue struct {
 	s string
 }
 
-// GetErrorInfo returns all the error  informations.
+// GetErrorInfo returns the corresponding error informations.
+// Including the file name , line number, function name
 func GetErrorInfo(err error) error {
 	if err != nil {
 		pc, file, line, ok := runtime.Caller(1)
@@ -60,7 +60,17 @@ func GetErrorInfo(err error) error {
 	return nil
 }
 
-// New returns a new error
+// GetErrorType accepts an error
+// and returns the type of the error
+func GetErrorType(err error) error {
+	if err != nil {
+		errorMsg := fmt.Sprintf("error=> %s : error type=> %T", err, err)
+		return &errorValue{errorMsg}
+	}
+	return nil
+}
+
+// New returns a new error.
 func New(err string) error {
 	return &errorValue{err}
 }

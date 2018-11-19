@@ -66,3 +66,33 @@ func TestNew(t *testing.T) {
 		})
 	}
 }
+
+func TestGetErrorType(t *testing.T) {
+	type args struct {
+		err error
+	}
+	tests := []struct {
+		name    string
+		args    args
+		wantErr bool
+	}{
+		{
+			name: "normal case",
+			args: args{
+				err: fmt.Errorf("New error"),
+			},
+			wantErr: true,
+		},
+		{
+			name:    "No arguments case",
+			wantErr: false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if err := GetErrorType(tt.args.err); (err != nil) != tt.wantErr {
+				t.Errorf("GetErrorType() error = %v, wantErr %v", err, tt.wantErr)
+			}
+		})
+	}
+}
