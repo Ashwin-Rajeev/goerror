@@ -17,7 +17,7 @@
 
 // which accepts the error and found the detailed information about the error.
 // GetErrorInfo returns the error wrapped up with the file name,
-// line number and function name in which error occured.
+// line number and function name of that particular error.
 
 // if err != nil {
 //         return goerror.GetErrorInfo(err)
